@@ -1,7 +1,7 @@
 [project]
-name = "click"
+name = "click-core"
 version = "8.2.0.dev"
-description = "Composable command line interface toolkit"
+description = "Core package for the composable command line interface toolkit - you probably want to install 'click'."
 readme = "README.md"
 license = {file = "LICENSE.txt"}
 maintainers = [{name = "Pallets", email = "contact@palletsprojects.com"}]
@@ -14,9 +14,6 @@ classifiers = [
     "Typing :: Typed",
 ]
 requires-python = ">=3.8"
-dependencies = [
-    "colorama; platform_system == 'Windows'",
-]
 
 [project.urls]
 Donate = "https://palletsprojects.com/donate"
@@ -42,6 +39,7 @@ include = [
 ]
 exclude = [
     "docs/_build/",
+    "pkg/",
 ]
 
 [tool.pytest.ini_options]
